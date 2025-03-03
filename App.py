@@ -7,7 +7,7 @@ from prophet.plot import plot_plotly
 # Function to load the model
 def load_model():
     try:
-        with open('/home/ziiz/Documents/Alura/project_ML_model_ozone_prophet/model_03_prophet.json', 'r') as file_in:
+        with open('model_03_prophet.json', 'r') as file_in:
             model = model_from_json(json.load(file_in))
             return model 
     except Exception as e:
